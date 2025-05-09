@@ -1,0 +1,16 @@
+name: Primer workflow en Github actions
+
+# el on especifica todos los eventos que van a dispara una acción
+on: 
+  #  Cada vez que se haga un push a la rama master o develop
+  push:
+    braches:
+      - master
+      - develop
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola Eggnesto
+        run: "echo 'Eggnesto es un hackerman'"
